@@ -187,6 +187,8 @@
     .project-links{display:flex;gap:8px}
     .project-link{display:flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid var(--border);border-radius:8px;color:var(--text-muted);text-decoration:none;transition:all var(--transition)}
     .project-link:hover{border-color:var(--accent);color:var(--accent)}
+    .project-link-text{width:auto;min-width:34px;padding:0 10px;gap:6px;font-family:var(--font-mono);font-size:0.68rem;white-space:nowrap}
+    .project-link-text svg{flex-shrink:0}
     .project-name{font-family:var(--font-display);font-size:1rem;font-weight:600;color:var(--text-primary);margin:0}
     .project-desc{font-size:0.85rem;color:var(--text-second);line-height:1.75;flex:1}
     .project-stack{display:flex;flex-wrap:wrap;gap:0.45rem;margin-top:auto}
@@ -549,7 +551,7 @@
     <div class="container">
       <p class="section-label reveal">Selected work</p>
       <h2 class="reveal reveal-delay-1">Projects I've Built</h2>
-      <p class="section-sub reveal reveal-delay-2">Real-world applications spanning medical AI, mental wellness, disaster response, and personal finance — built end-to-end.</p>
+      <p class="section-sub reveal reveal-delay-2">Real-world applications spanning medical AI, mental wellness, civic monitoring, and personal finance — built end-to-end.</p>
 
       <div class="projects-grid">
 
@@ -596,24 +598,33 @@
           </div>
         </div>
 
-        <!-- Disaster EWS -->
+        <!-- Civic Monitoring App -->
         <div class="project-card reveal">
           <div class="project-top">
-            <div class="project-icon">🚨</div>
+            <div class="project-icon">🏙️</div>
             <div class="project-links">
-              <a href="https://github.com/AmlanWTK/DisasterEarlyWarning-" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Disaster Early Warning on GitHub">
+              <a href="https://github.com/AmlanWTK/Civic-Monitoring-App" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Civic Monitoring App on GitHub">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.564 9.564 0 0 1 12 6.845c.85.004 1.705.114 2.504.336 1.909-1.294 2.748-1.026 2.748-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              </a>
+              <a href="https://vimeo.com/1194822895" target="_blank" rel="noopener noreferrer" class="project-link project-link-text" aria-label="Watch Civic Monitoring App demo video">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Demo
+              </a>
+              <a href="https://github.com/AmlanWTK/Civic-Monitoring-App/releases/latest" target="_blank" rel="noopener noreferrer" class="project-link project-link-text" aria-label="Download Civic Monitoring App Android APK">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                APK
               </a>
             </div>
           </div>
-          <h3 class="project-name">Disaster Early Warning — Bangladesh</h3>
-          <p class="project-desc">A Flutter mobile app built for Bangladesh providing real-time disaster monitoring, early warning alerts, and emergency response coordination. Integrates flood monitoring, weather forecasting, satellite imagery, and disaster reporting.</p>
+          <h3 class="project-name">Civic Infrastructure Monitoring — Flutter App</h3>
+          <p class="project-desc">A Flutter mobile dashboard for monitoring civic infrastructure, traffic conditions, disaster incidents, and environmental data. Includes map-based insights, live public-data integrations, predictive maintenance indicators, and analytics views for smarter city management.</p>
           <div class="project-stack">
             <span class="project-tag">Flutter</span>
             <span class="project-tag">Dart</span>
-            <span class="project-tag">Real-time Data</span>
-            <span class="project-tag">Satellite API</span>
-            <span class="project-tag">Cross-platform</span>
+            <span class="project-tag">REST APIs</span>
+            <span class="project-tag">OpenStreetMap</span>
+            <span class="project-tag">Predictive Analytics</span>
+            <span class="project-tag">Civic Tech</span>
           </div>
         </div>
 
@@ -624,6 +635,14 @@
             <div class="project-links">
               <a href="https://github.com/AmlanWTK/Expense-Tracker-Flutter-Application" target="_blank" rel="noopener noreferrer" class="project-link" aria-label="View Expense Tracker on GitHub">
                 <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.477 2 2 6.477 2 12c0 4.418 2.865 8.167 6.839 9.49.5.092.682-.217.682-.482 0-.237-.009-.866-.013-1.7-2.782.603-3.369-1.34-3.369-1.34-.454-1.156-1.11-1.462-1.11-1.462-.908-.62.069-.608.069-.608 1.003.07 1.531 1.03 1.531 1.03.892 1.529 2.341 1.087 2.91.832.092-.647.35-1.088.636-1.338-2.22-.253-4.555-1.11-4.555-4.943 0-1.091.39-1.984 1.029-2.683-.103-.253-.446-1.27.098-2.647 0 0 .84-.268 2.75 1.026A9.564 9.564 0 0 1 12 6.845c.85.004 1.705.114 2.504.336 1.909-1.294 2.748-1.026 2.748-1.026.546 1.377.202 2.394.1 2.647.64.699 1.028 1.592 1.028 2.683 0 3.842-2.337 4.687-4.565 4.935.359.309.678.919.678 1.852 0 1.336-.012 2.415-.012 2.743 0 .267.18.578.688.48C19.138 20.163 22 16.418 22 12c0-5.523-4.477-10-10-10z"/></svg>
+              </a>
+              <a href="https://vimeo.com/1194374691" target="_blank" rel="noopener noreferrer" class="project-link project-link-text" aria-label="Watch Expense Tracker demo video">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+                Demo
+              </a>
+              <a href="https://github.com/AmlanWTK/Expense-Tracker-Flutter-Application/releases/latest" target="_blank" rel="noopener noreferrer" class="project-link project-link-text" aria-label="Download Expense Tracker Android APK">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                APK
               </a>
             </div>
           </div>
